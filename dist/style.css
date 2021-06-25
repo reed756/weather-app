@@ -63,3 +63,7 @@ input, button, .data {
 button:hover {
     background-color: lightgrey;
 }
+
+.loading {
+    visibility: hidden;
+}

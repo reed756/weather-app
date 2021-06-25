@@ -14,9 +14,13 @@ const getWeatherData = async() => {
 
     let name = document.querySelector('[data = "name"]');
     let description = document.querySelector('[data = "description"]');
+    let loading = document.querySelector('.loading');
 
+    try {
+    loading.classList.remove('loading');
     let response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=2d5ed2f42a6650224e2a6f20047d7b76`, {mode: 'cors'});
     let weatherData = await response.json();
+    loading.classList.add('loading');
     let newTemp = convertTemp(weatherData.main.temp);
 
     let weather = new Weather(weatherData.name, weatherData.weather[0].main, newTemp);
@@ -25,7 +29,12 @@ const getWeatherData = async() => {
     description.textContent = `${weather.description}`;
     temperature.textContent = `${weather.temp}`;
     tempButton.classList.remove('hidden');
+    tempButton.textContent = "°C";
+    isCelsius = true;
 
+    } catch(err) {
+        alert("Please enter a real location!");
+    }
 }
 
 const tempToggle = () => {
