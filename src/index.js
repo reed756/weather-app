@@ -34,6 +34,7 @@ const getWeatherData = async() => {
 
     } catch(err) {
         alert("Please enter a real location!");
+        input.value = "";
     }
 }
 
