@@ -63,6 +63,9 @@ input, button, .data {
     top: 550px;
     flex-direction: column;
     width: 582.38px;
+}
+
+.background-box {
     background-color: white;
     border-radius: 4px;
     box-shadow: 3px 6px darkgray;
@@ -78,4 +81,12 @@ button:hover {
 
 .loading {
     visibility: hidden;
+}
+
+.flex {
+    display: flex;
+}
+
+.clear {
+    background-color: tomato;
 }
