@@ -46,6 +46,7 @@ const pageLoad = () => {
     p6.classList.add('data');
     p7.classList.add('data');
     p8.classList.add('data');
+    div1.classList.add('search-form');
     div2.classList.add('hidden', 'data-box');
     div3.classList.add('temp-box');
     div4.classList.add('loading');
