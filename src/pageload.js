@@ -13,6 +13,8 @@ const pageLoad = () => {
     let p1 = document.createElement('p');
     let p2 = document.createElement('p');
     let p3 = document.createElement('p');
+    let p4 = document.createElement('p');
+    let p5 = document.createElement('p');
 
     h1.textContent = "Weather-app";
     button.textContent = "SHOW ME THE WEATHER!";
@@ -23,9 +25,13 @@ const pageLoad = () => {
     p1.setAttribute('data', 'name');
     p2.setAttribute('data', 'description');
     p3.setAttribute('data', 'temperature');
+    p4.setAttribute('data', 'humidity');
+    p5.setAttribute('data', 'feels-like');
     p1.classList.add('data');
     p2.classList.add('data');
     p3.classList.add('data');
+    p4.classList.add('data');
+    p5.classList.add('data');
     div2.classList.add('data-box');
     div3.classList.add('temp-box');
     div4.classList.add('loading');
@@ -38,6 +44,8 @@ const pageLoad = () => {
     div3.appendChild(p3);
     div3.appendChild(button2);
     div2.appendChild(div3);
+    div2.appendChild(p4);
+    div2.appendChild(p5);
     content.appendChild(div1);
     content.appendChild(div2);
     content.appendChild(div4);
