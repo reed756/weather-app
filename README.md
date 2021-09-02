@@ -1,19 +1,45 @@
 # weather-app
 
-Description
-
-Here I created an app that would show the weather conditions for a location as part of the The Odin Project curriculum. The project used HTML, CSS, Javascript, Webpack, and OpenWeatherMap API. The main learning outcome from the project was to use the OpenWeatherMap API as well as the await keyword to create an app for the first time. 
+A web application which dynamically displays the present weather at the user's favourite locations around the globe, from an array of locations which is persisted in local storage. Features a clickable unit display, which will convert the displayed temperature from Celsius to Fahrenheit and back. Handles unsuccessful API calls by alerting a message to the user.
+The project used HTML, CSS, Javascript, Webpack, and OpenWeatherMap API.
 
 LIVE - https://reed756.github.io/weather-app/
 REPO - https://github.com/reed756/weather-app
 
+## Lessons Learned
+
+Was the first project I've ever made which consumes an external API - learned a lot about using async JavaScript (including Promises, async/await, fetch API and error handling).
+
+First time working with JSON files, picked up extracting info from a JSON data structure and destructuring from this project.
+
+## Potential Future Features
+
+- Adding a feature which adds a relevant image for different weather descriptions.
+
+## Deployment
+
+Deployed with [github pages](https://pages.github.com/).
+
+## Get started
+
+No dependencies - to run locally, open the project directory with VSCode. Install the [Live Server extension](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) (if you haven't already) and click "Go Live" in the blue bar at the bottom of the screen. This will open a live development server in your browser that updates in response to code changes.
+
+## Instructions I followed
+
 Instructions:
 
-Set up a blank HTML document with the appropriate links to your JavaScript and CSS files.
-Write the functions that hit the API. You’re going to want functions that can take a location and return the weather data for that location. For now, just console.log() the information.
-Write the functions that process the JSON data you’re getting from the API and return an object with only the data you require for your app.
-Set up a simple form that will let users input their location and will fetch the weather info (still just console.log() it).
-Display the information on your webpage!
-Add any styling you like!
-Optional: add a ‘loading’ component that displays from the time the form is submitted until the information comes back from the API.
-Push that baby to github and share your solution below!
+- Set up a blank HTML document with the appropriate links to your JavaScript and CSS files.
+
+- Write the functions that hit the API. You’re going to want functions that can take a location and return the weather data for that location. For now, just console.log() the information.
+
+- Write the functions that process the JSON data you’re getting from the API and return an object with only the data you require for your app.
+
+- Set up a simple form that will let users input their location and will fetch the weather info (still just console.log() it).
+
+- Display the information on your webpage!
+
+- Add any styling you like!
+
+- Optional: add a ‘loading’ component that displays from the time the form is submitted until the information comes back from the API.
+
+- Push that baby to github and share your solution below!
