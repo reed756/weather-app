@@ -3,13 +3,14 @@ $secondary-color: #814360;
 $third-color: #808FAA;
 $fourth-color: #75A2D0;
 $fifth-color: #919AD9; 
+$font-stack: 'Sunflower', sans-serif;
 
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Sunflower', sans-serif;
+    font-family: $font-stack;
 }
 
 body {
@@ -24,16 +25,26 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    @media only screen and (max-width: 425px) {
+        #content {
+            display: block;
+        }
+    }
 }
 
 h1 {
     padding-bottom: 50px;
     font-size: 100px;
     color: $primary-color;
+    @media only screen and (max-width: 425px) {
+        h1 {
+            font-size: 50px;
+        }
+    }
 }
 
 input {
-    background-color: $fourth-color;
+    background-color: $third-color;
     color: $primary-color;
     outline: none;
     border-radius: 4px;
@@ -102,9 +113,6 @@ button:hover {
 }
 
 @media only screen and (max-width: 425px) {
-    #content {
-        display: block;
-    }
     .search-form {
         display: block;
     }
